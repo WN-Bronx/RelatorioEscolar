@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RelatorioEscolar</string>
+    <string name="relatorio">RELATÓRIO</string>
+    <string name="adicionar">ADD</string>
+    <string name="alunos">Informe o nome do aluno</string>
+    <string name="nota1">Informe a primeira nota</string>
+    <string name="nota2">Informe a segunda nota</string>
+    <string name="nota3">Informe a terceira nota</string>
+</resources>

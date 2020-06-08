@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pg_fundo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="14dp"
+        tools:context="br.com.fake.steam.LoginActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RELATÓRIO DE NOTAS/PROVAS "
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:textColor="#EEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+            <TextView
+                android:id="@+id/tViewAluno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aluno :"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#EEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etAluno"
+                android:hint="@string/alunos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#CCC"
+            />
+
+            <TextView
+                android:id="@+id/tViewNota1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota 1"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#EEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNota1"
+                android:hint="@string/nota1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#CCC"
+            />
+            <TextView
+                android:id="@+id/tViewNota2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota 2"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#EEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNota2"
+                android:hint="@string/nota2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#CCC"
+            />
+
+            <TextView
+                android:id="@+id/tViewNota3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota 3"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#EEE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNota3"
+                android:hint="@string/nota3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#CCC"
+            />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/pg_button"
+                android:text="@string/adicionar"
+                android:textColor="@color/colorAccent"
+                android:onClick="addAluno"
+            />
+
+            <Button
+                android:id="@+id/btn_relatorio"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="-49dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/pg_button"
+                android:text="@string/relatorio"
+                android:textColor="@color/colorAccent"
+                android:onClick="exibirRelatorio"
+            />
+    </LinearLayout>
+</ScrollView>
